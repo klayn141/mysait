@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые мемы</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3ea824 0%, #2622e2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .content {
+            max-width: 1000px;
+            width: 100%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 50px;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            color: #be2f2f;
+            text-align: center;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .image-box {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: #f0e9db;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            font-size: 32px;
+            padding: 15px 40px;
+            background-color: #e1d6c4;
+            border-radius: 60px;
+            color: #1d1729;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 5px 0 #b3a187;
+        }
+        
+        .back-button:hover {
+            background-color: #262161;
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 0 #0b0a16;
+            border-color: #cbb28b;
+            cursor: pointer;
+        }
+        
+        .back-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 0 #0b0a16;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Мои любимые мемы</h1>
+        
+        <div class="gallery">
+            <div class="image-box">
+                <img src="./123123.jpg" alt="Мем 1">
+            </div>
+            <div class="image-box">
+                <!-- Сюда добавишь вторую картинку -->
+                <img src="./кукнрисм выу.jpg" alt="Мем 2" style="opacity: 1;">
+            </div>
+            <div class="image-box">
+                <!-- Сюда добавишь третью картинку -->
+                <img src="./пуекекее.jpg" alt="Мем 3" style="opacity: 1;">
+            </div>
+            <div class="image-box">
+                <!-- Сюда добавишь четвертую картинку -->
+                <img src="./фывфыв.jpg" alt="Мем 4" style="opacity: 1;">
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-button">← Назад</a>
+    </div>
+</body>
+</html>

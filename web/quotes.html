@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые цитаты</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2b1a4a 0%, #8a6cc9 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .content {
+            max-width: 1000px;
+            width: 100%;
+            background-color: white;
+            padding: 40px;
+            border-radius: 50px;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 57px;
+            margin-bottom: 40px;
+            color: #262161;
+            text-align: center;
+        }
+        
+        .quotes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .quote-box {
+            background-color: #f0e9db;
+            border-radius: 30px;
+            padding: 30px 35px;
+            border: 3px dashed #8a6cc9;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .quote-box:hover {
+            transform: scale(1.01);
+            border-color: #2b1a4a;
+        }
+        
+        .quote-text {
+            font-size: 30px;
+            color: #2b1a4a;
+            line-height: 1.4;
+            font-style: italic;
+            text-align: left;
+        }
+        
+        .quote-author {
+            font-size: 24px;
+            color: #8a6cc9;
+            margin-top: 15px;
+            text-align: right;
+            font-weight: bold;
+        }
+        
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            font-size: 35px;
+            padding: 20px 50px;
+            background-color: #e1d6c4;
+            border-radius: 60px;
+            color: #1d1729;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 5px 0 #b3a187;
+        }
+        
+        .back-button:hover {
+            background-color: #262161;
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 0 #0b0a16;
+            border-color: #cbb28b;
+            cursor: pointer;
+        }
+        
+        .back-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 0 #0b0a16;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Мои любимые цитаты</h1>
+        
+        <div class="quotes-container">
+            <div class="quote-box">
+                <div class="quote-text">
+                    "Всё, чем ты гордишься, рано или поздно будет выброшено на помойку"
+                </div>
+                <div class="quote-author">— Народная мудрость</div>
+            </div>
+            
+            <div class="quote-box">
+                <div class="quote-text">
+                    Старый бог
+                </div>
+                <div class="quote-author">— Старый бог</div>
+            </div>
+            
+            <div class="quote-box">
+                <div class="quote-text">
+                    Мало людей мыслят, но все хотят иметь мнение.
+                </div>
+                <div class="quote-author">— Неизвестен</div>
+            </div>
+        </div>
+        
+        <a href="./index.html" class="back-button">← Назад</a>
+    </div>
+</body>
+</html>
